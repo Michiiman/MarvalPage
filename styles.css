@@ -1,0 +1,181 @@
+body {
+    font-family: sans-serif;
+    background-color: #94d8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #006ba6;
+    color: white;
+    height: 11vh;
+    
+}
+
+.nav-text {
+    margin-top: 1%;
+    margin-right: 5%;
+}
+
+.nav-text h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.nav-text h6{
+    font-size: 1.3rem;
+    margin-top: 0px;
+    text-align: right;
+}
+
+.codigoBarras {
+    display: flex;
+    justify-content: center; 
+}
+
+.codigoBarras img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid #ccc;
+    border-radius: 12px;
+    margin: 1rem 2rem 1rem 2rem ;
+    gap:5px;
+}
+
+.info-box {
+    background-color: #d9f1ff;
+    border: 2px solid #99c2e6;
+    border-radius: 12px;
+    border-color:  #006ba6;
+    overflow: hidden;
+    width: 33%;
+    height: fit-content;
+}
+
+.table-box {
+    width: 100%; 
+    border-collapse: collapse; 
+    
+}
+
+.table-box td {
+    padding: 10px; 
+    text-align: left; 
+    height: 30px;
+    
+}
+
+.table-box tr:nth-child(even) {
+    background-color:  #99c2e6;
+}
+
+.table-box tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+
+.valor-box {
+    background-color: #006ba6;
+    color: white;
+    border-radius: 12px;
+    width: 33%;
+    margin: 1px;
+
+}
+
+.title1 {
+    justify-content: center;
+    display: flex;
+    background-color: #006ba6;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.logo {
+    width: fit-content;
+    max-width: 350px;
+}
+
+
+
+.container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+}
+
+
+
+
+
+.table-3 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-3 th,
+.table-3 td {
+    border: 0px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-3 th {
+    background-color: #006ba6;
+    color: white;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+
+
+
+
+
+.bold {
+    font-weight: bold;
+}
+
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        /* Cambia la orientación a vertical en pantallas pequeñas */
+    }
+
+    .info-box,
+    .valor-box {
+        width: 100%;
+        /* Ocupa el 100% del ancho en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+}
+
+.fecha {
+    font-size: 2vh;
+    font-weight: bold;
+    margin-top: 1px;
+
+}
