@@ -15,7 +15,7 @@ nav {
     justify-content: space-between;
     background-color: #006ba6;
     color: white;
-    height: 11vh;
+    height: 13vh;
     
 }
 
@@ -55,7 +55,7 @@ nav {
     background-color: #d9f1ff;
     border: 2px solid  #006ba6;
     border-radius: 12px;
-    overflow: hidden;
+    overflow: auto;
     width: 30%;
     height: fit-content;
 }
@@ -94,7 +94,7 @@ nav {
 
 .valor-box h3{
     margin: 0 0 10px 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 
@@ -115,7 +115,7 @@ ul li::before {
     color:white;                
     font-size: 12px;            
     position: absolute;
-    left: -20px;                 
+    left: -24px;                 
 }
 
 ul li strong {
@@ -127,7 +127,7 @@ ul li span {
     text-align: left;
     min-width: 150px;
     font-size: 0.8rem;
-    margin: 0 20px 0 0;
+    margin: 0 35px 0 -15px;
 }
 
 
@@ -138,8 +138,7 @@ ul li span {
     color: white;
     display: flex;
     background-color: #006ba6;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-radius: 12px 12px 0 0;
     padding: 5px;
     margin-top: 0%;
 }
@@ -152,16 +151,46 @@ ul li span {
 
 .container {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 12px 12px 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 5px;
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 7px;
 }
 
 .note {
-    margin-top: 20px;
+    width: 48%; /* Ajusta el ancho para que las dos columnas ocupen el espacio correctamente */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Asegura que el contenido esté distribuido uniformemente */
+}
+
+.note p {
+    margin-top: 0px;
     font-size: 0.9em;
     color: #555;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    height: 73%;
 }
+
+.info-valores {
+    border-radius: 5px;
+    width: 100%;
+    height: 40%;
+    align-content: center;
+    text-align: center;
+}
+
+.info-valores span {
+    text-align: center;
+    font-weight: bold;
+}
+
 
 .bold {
     font-weight: bold;
